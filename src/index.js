@@ -5,10 +5,11 @@ import reportWebVitals from './reportWebVitals';
 import UseReducer from "./useReducer/UseReducer";
 import UseReducerExamlple from "./useReducer/UseReducerExamlple";
 import UseHook from "./dongHook/UseHookExample"
+import UseHookExample from "./dongHook/UseHookExample2"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <UseHook/>
+  <UseHookExample/>
 );
 
 // If you want to start measuring performance in your app, pass a function
