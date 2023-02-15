@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import AddMember from './dongHook/AddMember'
-
+import UseMemo from './useMemo/UseMemo'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <AddMember/>
+    <UseMemo/>
 );
 
 // If you want to start measuring performance in your app, pass a function
