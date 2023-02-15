@@ -2,14 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import UseReducer from "./useReducer/UseReducer";
-import UseReducerExamlple from "./useReducer/UseReducerExamlple";
-import UseHook from "./dongHook/UseHookExample"
-import UseHookExample from "./dongHook/UseHookExample3"
+import AddMember from './dongHook/AddMember'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <UseHookExample/>
+    <AddMember/>
 );
 
 // If you want to start measuring performance in your app, pass a function
