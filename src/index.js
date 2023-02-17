@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Dong from './hook/Dong'
+import PromiseExample from "./promise/PromiseExample";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Dong/>
+    <PromiseExample/>
 );
 
 // If you want to start measuring performance in your app, pass a function
