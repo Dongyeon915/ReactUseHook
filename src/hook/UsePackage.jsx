@@ -1,6 +1,15 @@
-import React, {useEffect, useMemo, useReducer, useRef, useState} from "react";
+import React, {
+  useContext,
+  useEffect,
+  useMemo,
+  useReducer,
+  useRef,
+  useState
+} from "react";
+import UseNameContext from "./UseNameContext";
 
 export default function UsePackage() {
+  const na = useContext(UseNameContext)
 
   const [state, setState] = useState({
     name: null
@@ -43,14 +52,21 @@ export default function UsePackage() {
     dispatch({type: "add-name"})
   }
 
-  return (
-      <div>
-        <p>{state.name}</p>
-        <p>{redState.name}</p>
-        <input ref={inputRef} type="text" placeholder={"이름을 입력"}/>
-        <input ref={resucerRef} type="text" placeholder={"리듀서이름을 입력"}/>
-        <button onClick={btnEvent}>버튼</button>
-        <button onClick={reducerBtnEvent}>리듀서버튼</button>
-      </div>
-  )
-}
+  const contextBtnEvent = () => {
+   return (
+       alert(na.name)
+   )
+  }
+
+    return (
+        <div>
+          <p>{state.name}</p>
+          <p>{redState.name}</p>
+          <input ref={inputRef} type="text" placeholder={"이름을 입력"}/>
+          <input ref={resucerRef} type="text" placeholder={"리듀서이름을 입력"}/>
+          <button onClick={btnEvent}>버튼</button>
+          <button onClick={reducerBtnEvent}>리듀서버튼</button>
+          <button onClick={contextBtnEvent}>useContext</button>
+        </div>
+    )
+  }
